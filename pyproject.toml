@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "hw13"
+version = "0.1.0"
+description = ""
+authors = ["Rostyslav Bysko <132708200+RostislavB74@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.8"
+fastapi = "^0.104.1"
+sqlalchemy = "^2.0.23"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+psycopg2 = "^2.9.9"
+python-multipart = "^0.0.6"
+alembic = "^1.12.1"
+pydantic = {extras = ["email"], version = "^2.5.0"}
+jinja2 = "^3.1.2"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+libgravatar = "^1.0.4"
+bcrypt = "^4.0.1"
+fastapi-mail = "^1.2.7"
+python-dotenv = "^1.0.0"
+pydantic-settings = "^2.1.0"
+fastapi-limiter = "^0.1.5"
+poetry = {extras = ["dotenv"], version = "^1.7.1"}
+django-environ = "^0.11.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

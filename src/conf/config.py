@@ -20,9 +20,9 @@ class Settings(BaseSettings):
     mail_server: str = 'smtp.meta.ua'
     redis_host: str = 'localhost'
     redis_port: int = 6379
-    cloudinary_name: str = 'name'
-    cloudinary_api_key: int = 326488457974591
-    cloudinary_api_secret: str = 'secret'
+    cloudinary_name: str = 'fsff'
+    cloudinary_api_key: int = 971882847358355
+    cloudinary_api_secret: str = 'sdfsfssgg'
 
     class Config:
         env_file = ".env"

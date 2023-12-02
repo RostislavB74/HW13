@@ -25,6 +25,7 @@ fastapi-limiter = "^0.1.5"
 poetry = {extras = ["dotenv"], version = "^1.7.1"}
 django-environ = "^0.11.2"
 cloudinary = "^1.36.0"
+passlib = "^1.7.4"
 
 
 [tool.poetry.group.dev.dependencies]

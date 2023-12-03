@@ -13,7 +13,7 @@ uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
 psycopg2 = "^2.9.9"
 python-multipart = "^0.0.6"
 alembic = "^1.12.1"
-pydantic = {extras = ["email"], version = "^2.5.0"}
+pydantic = {extras = ["email"], version = "^2.5.2"}
 jinja2 = "^3.1.2"
 python-jose = {extras = ["cryptography"], version = "^3.3.0"}
 libgravatar = "^1.0.4"
@@ -26,6 +26,8 @@ poetry = {extras = ["dotenv"], version = "^1.7.1"}
 django-environ = "^0.11.2"
 cloudinary = "^1.36.0"
 passlib = "^1.7.4"
+pytest = "^7.4.3"
+httpx = "^0.25.2"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -34,3 +36,14 @@ sphinx = "^7.2.6"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+
+
+#filterwarnings = [
+#    "error",
+#    "ignore::UserWarning",
+#    # note the use of single quote below to denote "raw" strings in TOML
+#    'ignore:function ham\(\) is deprecated:DeprecationWarning',
+#]
